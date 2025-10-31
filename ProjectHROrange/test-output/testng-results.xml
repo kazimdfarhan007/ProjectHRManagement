@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-10-31T11:49:19 IST" name="Suite" finished-at="2025-10-31T11:49:43 IST" duration-ms="24486">
+    <groups>
+    </groups>
+    <test started-at="2025-10-31T11:49:19 IST" name="Test" finished-at="2025-10-31T11:49:43 IST" duration-ms="24486">
+      <class name="com.hrtest.testdo">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrtest.testdo@3bf7ca37]" started-at="2025-10-31T11:49:19 IST" name="setUp" finished-at="2025-10-31T11:49:34 IST" duration-ms="14970" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testmethod()[pri:0, instance:com.hrtest.testdo@3bf7ca37]" started-at="2025-10-31T11:49:34 IST" name="testmethod" finished-at="2025-10-31T11:49:34 IST" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testmethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrtest.testdo@3bf7ca37]" started-at="2025-10-31T11:49:34 IST" name="tearDown" finished-at="2025-10-31T11:49:34 IST" duration-ms="444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.hrtest.testdo -->
+      <class name="com.hrtest.testdo2">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrtest.testdo2@20d525]" started-at="2025-10-31T11:49:34 IST" name="setUp" finished-at="2025-10-31T11:49:43 IST" duration-ms="8429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testmethod()[pri:0, instance:com.hrtest.testdo2@20d525]" started-at="2025-10-31T11:49:43 IST" name="testmethod" finished-at="2025-10-31T11:49:43 IST" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testmethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrtest.testdo2@20d525]" started-at="2025-10-31T11:49:43 IST" name="tearDown" finished-at="2025-10-31T11:49:43 IST" duration-ms="370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.hrtest.testdo2 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
