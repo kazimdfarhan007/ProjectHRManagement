@@ -70,6 +70,11 @@ if (prop.getProperty("browser").equalsIgnoreCase("chrome")) {
 		System.out.println("Browser closed successfully");
 	}
 
+	
+	public static Properties getProp() {
+		return prop;
+	}
+	
 	public WebDriver getDriver() {
 		return driver;
 	}

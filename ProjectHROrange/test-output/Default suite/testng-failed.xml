@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.demoproj.base.BaseClass">
+      <class name="com.hrtest.LoginPageTest">
         <methods>
-          <include name="LoginTest"/>
+          <include name="verfyValidityLoginTest"/>
+          <include name="loadconfig"/>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="setupPages"/>
         </methods>
-      </class> <!-- com.demoproj.base.BaseClass -->
+      </class> <!-- com.hrtest.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
