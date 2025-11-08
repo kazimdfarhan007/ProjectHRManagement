@@ -2,42 +2,42 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-08T08:32:48 IST" name="Suite" finished-at="2025-11-08T08:33:12 IST" duration-ms="24653">
+  <suite started-at="2025-11-08T16:36:09 IST" name="Suite" finished-at="2025-11-08T16:36:32 IST" duration-ms="23158">
     <groups>
     </groups>
-    <test started-at="2025-11-08T08:32:48 IST" name="Test" finished-at="2025-11-08T08:33:12 IST" duration-ms="24653">
+    <test started-at="2025-11-08T16:36:09 IST" name="Test" finished-at="2025-11-08T16:36:32 IST" duration-ms="23158">
       <class name="com.hrtest.testdo">
-        <test-method is-config="true" signature="loadconfig()[pri:0, instance:com.hrtest.testdo@6f4a47c7]" started-at="2025-11-08T08:32:48 IST" name="loadconfig" finished-at="2025-11-08T08:32:48 IST" duration-ms="14" status="PASS">
+        <test-method is-config="true" signature="loadconfig()[pri:0, instance:com.hrtest.testdo@2b4c1d96]" started-at="2025-11-08T16:36:09 IST" name="loadconfig" finished-at="2025-11-08T16:36:09 IST" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadconfig -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrtest.testdo@6f4a47c7]" started-at="2025-11-08T08:32:48 IST" name="setUp" finished-at="2025-11-08T08:32:59 IST" duration-ms="11345" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrtest.testdo@2b4c1d96]" started-at="2025-11-08T16:36:09 IST" name="setUp" finished-at="2025-11-08T16:36:19 IST" duration-ms="10032" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testmethod()[pri:0, instance:com.hrtest.testdo@6f4a47c7]" started-at="2025-11-08T08:32:59 IST" name="testmethod" finished-at="2025-11-08T08:32:59 IST" duration-ms="92" status="PASS">
+        <test-method signature="testmethod()[pri:0, instance:com.hrtest.testdo@2b4c1d96]" started-at="2025-11-08T16:36:19 IST" name="testmethod" finished-at="2025-11-08T16:36:19 IST" duration-ms="51" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testmethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrtest.testdo@6f4a47c7]" started-at="2025-11-08T08:32:59 IST" name="tearDown" finished-at="2025-11-08T08:32:59 IST" duration-ms="278" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrtest.testdo@2b4c1d96]" started-at="2025-11-08T16:36:19 IST" name="tearDown" finished-at="2025-11-08T16:36:20 IST" duration-ms="249" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.hrtest.testdo -->
       <class name="com.hrtest.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrtest.LoginPageTest@587e5365]" started-at="2025-11-08T08:32:59 IST" name="setUp" finished-at="2025-11-08T08:33:07 IST" duration-ms="7316" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrtest.LoginPageTest@126945f9]" started-at="2025-11-08T16:36:20 IST" name="setUp" finished-at="2025-11-08T16:36:27 IST" duration-ms="7323" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setupPages()[pri:0, instance:com.hrtest.LoginPageTest@587e5365]" started-at="2025-11-08T08:33:07 IST" name="setupPages" finished-at="2025-11-08T08:33:07 IST" duration-ms="14" status="PASS">
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:com.hrtest.LoginPageTest@126945f9]" started-at="2025-11-08T16:36:27 IST" name="setupPages" finished-at="2025-11-08T16:36:27 IST" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPages -->
-        <test-method signature="verfyValidityLoginTest()[pri:0, instance:com.hrtest.LoginPageTest@587e5365]" started-at="2025-11-08T08:33:07 IST" name="verfyValidityLoginTest" finished-at="2025-11-08T08:33:12 IST" duration-ms="5370" status="PASS">
+        <test-method signature="verfyValidityLoginTest()[pri:0, instance:com.hrtest.LoginPageTest@126945f9]" started-at="2025-11-08T16:36:27 IST" name="verfyValidityLoginTest" finished-at="2025-11-08T16:36:32 IST" duration-ms="5131" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verfyValidityLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrtest.LoginPageTest@587e5365]" started-at="2025-11-08T08:33:12 IST" name="tearDown" finished-at="2025-11-08T08:33:12 IST" duration-ms="167" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrtest.LoginPageTest@126945f9]" started-at="2025-11-08T16:36:32 IST" name="tearDown" finished-at="2025-11-08T16:36:32 IST" duration-ms="299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

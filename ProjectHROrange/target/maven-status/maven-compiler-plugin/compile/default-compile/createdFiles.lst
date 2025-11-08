@@ -3,3 +3,4 @@ com\demoproj\base\BaseClass.class
 com\demoproj\pages\HomePage.class
 com\demoproj\pages\LoginPage.class
 com\demoproj\listeners\TestListener.class
+com\demoproj\utilities\LoggerManager.class

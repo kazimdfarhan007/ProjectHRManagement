@@ -3,13 +3,23 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.demoproj.base.BaseClass">
+      <class name="com.hrtest.testdo">
         <methods>
-          <include name="LoginTest"/>
+          <include name="testmethod"/>
+          <include name="loadconfig"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.demoproj.base.BaseClass -->
+      </class> <!-- com.hrtest.testdo -->
+      <class name="com.hrtest.LoginPageTest">
+        <methods>
+          <include name="verfyValidityLoginTest"/>
+          <include name="loadconfig"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setupPages"/>
+        </methods>
+      </class> <!-- com.hrtest.LoginPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -7,6 +7,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.LockSupport;
 
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,6 +20,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import com.demoproj.actiondriver.ActionDriver;
+import com.demoproj.utilities.LoggerManager;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -28,6 +30,7 @@ public class BaseClass {
 	public static Properties prop;
 	public WebDriver driver;
 	private static ActionDriver actionDriver;
+	public static final Logger logger = LoggerManager.getLogger(BaseClass.class);
 	FileReader fr;
 	@BeforeSuite
 	public void loadconfig() throws IOException {
@@ -35,6 +38,7 @@ public class BaseClass {
 		if (driver == null) {
 			fr = new FileReader(System.getProperty("user.dir")+"\\src\\main\\resources\\cf.properties");
 			prop.load(fr);
+			logger.info("config.properties file loaded");
 		}
 		
 	}
@@ -44,11 +48,16 @@ public class BaseClass {
 		System.out.println("Seeting up webdriver for:"+this.getClass().getSimpleName());
 		launchBrowser();
 		staticWait(3);
-		
+		logger.info("Browser launched successfully");
+		logger.trace("Trace: Browser launched");
+		logger.error("Error: Browser launch issue");
+		logger.fatal("Fatal: Browser could not be launched");
+		logger.warn("Warn: Browser launch warning");
 		//intialize action driver once
 		if (actionDriver == null) {
 			actionDriver = new ActionDriver(driver);
 			System.out.println("Action driver initialized");
+			logger.info("Action Driver initialized successfully");
 		}
 		
 	}
@@ -60,8 +69,10 @@ if (prop.getProperty("browser").equalsIgnoreCase("chrome")) {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--remote-allow-origins=*");
 			driver = new ChromeDriver(options);
+			logger.info("Chrome Browser launched");
 			driver.manage().window().maximize();
 			driver.get(prop.getProperty("url"));
+			
 		}
 		else if (prop.getProperty("browser").equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
@@ -75,11 +86,12 @@ if (prop.getProperty("browser").equalsIgnoreCase("chrome")) {
 	}
 	@AfterMethod
 	public void tearDown() {
-		driver.close();
+		driver.quit();
 		System.out.println("Browser closed successfully");
 		driver=null;
 		actionDriver=null;
 		System.out.println("Driver and ActionDriver set to null");
+		logger.info("Browser closed and resources cleaned up");
 	}
 
 	
