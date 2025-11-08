@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import com.demoproj.actiondriver.ActionDriver;
+import com.demoproj.base.BaseClass;
 
 public class HomePage {
 	private ActionDriver actionDriver;
@@ -13,10 +14,13 @@ public class HomePage {
 	private By logoutLink = By.linkText("Logout");
 	private By logo = By.xpath("//div[@class='oxd-brand-banner']//img");
 
+//	public HomePage(WebDriver driver) {
+//		this.actionDriver = new ActionDriver(driver);
+//	}
 	public HomePage(WebDriver driver) {
-		this.actionDriver = new ActionDriver(driver);
+		this.actionDriver = BaseClass.getActionDriver();
 	}
-
+	
 	public boolean visibleAdminTab() {
 		
 		return actionDriver.isDisplayed(adminTab);

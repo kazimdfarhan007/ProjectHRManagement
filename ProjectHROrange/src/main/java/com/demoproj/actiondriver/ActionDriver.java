@@ -19,7 +19,7 @@ public class ActionDriver{
 		this.driver=driver;
 		int Intg = Integer.parseInt(BaseClass.getProp().getProperty("explicitWait"));
 		this.wait=new WebDriverWait(driver,Duration.ofSeconds(Intg));
-		
+		System.out.println("Action Driver created");
 	}
 	public void click(By by) {
 		try {
