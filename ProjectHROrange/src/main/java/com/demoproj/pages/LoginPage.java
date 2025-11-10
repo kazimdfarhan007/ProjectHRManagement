@@ -13,7 +13,7 @@ public class LoginPage {
 
     private By passwordField = By.name("password");
     private By loginButton = By.xpath("//button[text()=' Login ']");
-    private By errorMsg = By.linkText("//p[text()='Invalid credentials']");
+    private By errorMsg = By.xpath("//p[text()='Invalid credentials']");
     
 //	public LoginPage(WebDriver driver) {
 //		ActionDriver actionDriver = new ActionDriver(driver);

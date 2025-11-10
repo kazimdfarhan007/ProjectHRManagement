@@ -14,8 +14,8 @@ public class LoginPageTest extends BaseClass {
 	
 	@BeforeMethod
 	public void setupPages() {
-		loginpage=new LoginPage(driver);
-		homePage=new HomePage(driver);
+		loginpage=new LoginPage(getDriver());
+		homePage=new HomePage(getDriver());
 	}
 	@Test
 	public void verfyValidityLoginTest() {
@@ -26,5 +26,11 @@ public class LoginPageTest extends BaseClass {
 		//
 		Assert.assertTrue(homePage.visibleAdminTab());
 		homePage.logout();
+	}
+@Test
+	public void invalidLoginTest() {
+		loginpage.login("Admin", "admin12");
+		loginpage.geterrorMsg();
+		loginpage.geterrorText("Invalid credentials");
 	}
 }

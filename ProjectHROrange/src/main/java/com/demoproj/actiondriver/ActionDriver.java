@@ -24,13 +24,14 @@ public class ActionDriver{
 		System.out.println("Action Driver created");
 	}
 	public void click(By by) {
+		String elementDesc = getElementDescribtion(by);
 		try {
 			waitforElementtobeClikable(by);
 			driver.findElement(by).click();
-			logger.info("Clicked on element: " + by.toString());
+			logger.info("Clicked on element: " +elementDesc);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			logger.error("Unable to click on element: " + by.toString() + " - " + e.getMessage());
+			logger.error("Unable to click on element: " + e.getMessage());
 		}
 	}
 
@@ -38,7 +39,7 @@ public class ActionDriver{
 		try {
 			waitforElementtobeVisible(by);
 			driver.findElement(by).sendKeys(text);
-			logger.info("Typed text '" + text + "' into element: " + by.toString());
+			logger.info("Typed text "+getElementDescribtion(by)+" into element: " + text);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			logger.error("Unable to type text '" + text + "' into element: " + by.toString() + " - " + e.getMessage());
@@ -61,19 +62,12 @@ public class ActionDriver{
 	public boolean isDisplayed(By by) {
 		try {
 			waitforElementtobeVisible(by);
-			boolean displayed = driver.findElement(by).isDisplayed();
-			if (displayed) {
-				logger.info("Element is displayed");
-			} else {
-				logger.error("Element is not displayed");
-			}
-			return displayed;
+			logger.info("Element is displayed " + getElementDescribtion(by));
+			return driver.findElement(by).isDisplayed();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			logger.error("Unable to verify element display status" + e.getMessage());
-			return false;		
+			logger.error("Element is not displayed: " + e.getMessage());
+			return false;
 		}
-		
 	}
 	public void compareText(By by, String expectedText) {
 		try {
@@ -147,6 +141,54 @@ public class ActionDriver{
 			logger.error("Element is not visible"+e.getMessage());
 		}
 		
+	}
+
+	public String getElementDescribtion(By locator) {
+		
+		if (locator == null) {
+			return "locator is null";
+		}
+		if (driver == null) {
+			return "WebDriver is null";
+		}
+		WebElement element = driver.findElement(locator);
+		String name=element.getDomProperty("name");
+		String id=element.getDomProperty("id");
+		String text=element.getText();
+		String className=element.getDomProperty("class");
+		String placeholder=element.getDomProperty("placeholder");
+		
+		try {
+			if(isNotEmpty(name)) {
+			    return "name="+name;
+			}
+			else if (isNotEmpty(id)) {
+				return "id=" + id;
+			} else if (isNotEmpty(text)) {
+				return "text=" + truncateString(text,70);
+			} else if (isNotEmpty(className)) {
+				return "class=" + className;
+			} else if (isNotEmpty(placeholder)) {
+				return "placeholder=" + placeholder;
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			logger.error("unable to describe element"+e.getMessage());
+		}
+		
+		
+		
+		return "Unable to fetch element describtion";
+	}
+	private boolean isNotEmpty(String str) {
+        return str != null && !str.trim().isEmpty();
+    }
+
+	private String truncateString(String str, int maxLength) {
+		if (str.length() <= maxLength) {
+			return str;
+		}
+		return str.substring(0, maxLength) + "...";
 	}
 	
 	

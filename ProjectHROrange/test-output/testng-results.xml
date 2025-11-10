@@ -1,43 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-08T16:36:09 IST" name="Suite" finished-at="2025-11-08T16:36:32 IST" duration-ms="23158">
+  <suite started-at="2025-11-11T01:05:16 IST" name="Suite" finished-at="2025-11-11T01:05:41 IST" duration-ms="25633">
     <groups>
     </groups>
-    <test started-at="2025-11-08T16:36:09 IST" name="Test" finished-at="2025-11-08T16:36:32 IST" duration-ms="23158">
+    <test started-at="2025-11-11T01:05:16 IST" name="Test" finished-at="2025-11-11T01:05:41 IST" duration-ms="25633">
       <class name="com.hrtest.testdo">
-        <test-method is-config="true" signature="loadconfig()[pri:0, instance:com.hrtest.testdo@2b4c1d96]" started-at="2025-11-08T16:36:09 IST" name="loadconfig" finished-at="2025-11-08T16:36:09 IST" duration-ms="18" status="PASS">
+        <test-method is-config="true" signature="loadconfig()[pri:0, instance:com.hrtest.testdo@3d2ee678]" started-at="2025-11-11T01:05:15 IST" name="loadconfig" finished-at="2025-11-11T01:05:16 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadconfig -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrtest.testdo@2b4c1d96]" started-at="2025-11-08T16:36:09 IST" name="setUp" finished-at="2025-11-08T16:36:19 IST" duration-ms="10032" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrtest.testdo@3d2ee678]" started-at="2025-11-11T01:05:16 IST" name="setUp" finished-at="2025-11-11T01:05:24 IST" duration-ms="8002" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testmethod()[pri:0, instance:com.hrtest.testdo@2b4c1d96]" started-at="2025-11-08T16:36:19 IST" name="testmethod" finished-at="2025-11-08T16:36:19 IST" duration-ms="51" status="PASS">
+        <test-method signature="testmethod()[pri:0, instance:com.hrtest.testdo@3d2ee678]" started-at="2025-11-11T01:05:24 IST" name="testmethod" finished-at="2025-11-11T01:05:24 IST" duration-ms="27" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testmethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrtest.testdo@2b4c1d96]" started-at="2025-11-08T16:36:19 IST" name="tearDown" finished-at="2025-11-08T16:36:20 IST" duration-ms="249" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrtest.testdo@3d2ee678]" started-at="2025-11-11T01:05:24 IST" name="tearDown" finished-at="2025-11-11T01:05:24 IST" duration-ms="218" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.hrtest.testdo -->
-      <class name="com.hrtest.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrtest.LoginPageTest@126945f9]" started-at="2025-11-08T16:36:20 IST" name="setUp" finished-at="2025-11-08T16:36:27 IST" duration-ms="7323" status="PASS">
+      <class name="com.hrtest.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrtest.HomePageTest@37091312]" started-at="2025-11-11T01:05:16 IST" name="setUp" finished-at="2025-11-11T01:05:24 IST" duration-ms="7984" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setupPages()[pri:0, instance:com.hrtest.LoginPageTest@126945f9]" started-at="2025-11-08T16:36:27 IST" name="setupPages" finished-at="2025-11-08T16:36:27 IST" duration-ms="19" status="PASS">
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:com.hrtest.HomePageTest@37091312]" started-at="2025-11-11T01:05:24 IST" name="setupPages" finished-at="2025-11-11T01:05:24 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPages -->
-        <test-method signature="verfyValidityLoginTest()[pri:0, instance:com.hrtest.LoginPageTest@126945f9]" started-at="2025-11-08T16:36:27 IST" name="verfyValidityLoginTest" finished-at="2025-11-08T16:36:32 IST" duration-ms="5131" status="PASS">
+        <test-method signature="verifyAdminTabVisibilityTest()[pri:0, instance:com.hrtest.HomePageTest@37091312]" started-at="2025-11-11T01:05:24 IST" name="verifyAdminTabVisibilityTest" finished-at="2025-11-11T01:05:31 IST" duration-ms="7028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAdminTabVisibilityTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrtest.HomePageTest@37091312]" started-at="2025-11-11T01:05:31 IST" name="tearDown" finished-at="2025-11-11T01:05:31 IST" duration-ms="275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.hrtest.HomePageTest -->
+      <class name="com.hrtest.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrtest.LoginPageTest@6fe1b4fb]" started-at="2025-11-11T01:05:16 IST" name="setUp" finished-at="2025-11-11T01:05:24 IST" duration-ms="8042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidLoginTest()[pri:0, instance:com.hrtest.LoginPageTest@6fe1b4fb]" started-at="2025-11-11T01:05:24 IST" name="invalidLoginTest" finished-at="2025-11-11T01:05:26 IST" duration-ms="2551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:com.hrtest.LoginPageTest@6fe1b4fb]" started-at="2025-11-11T01:05:24 IST" name="setupPages" finished-at="2025-11-11T01:05:24 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPages -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrtest.LoginPageTest@6fe1b4fb]" started-at="2025-11-11T01:05:26 IST" name="tearDown" finished-at="2025-11-11T01:05:26 IST" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hrtest.LoginPageTest@6fe1b4fb]" started-at="2025-11-11T01:05:26 IST" name="setUp" finished-at="2025-11-11T01:05:35 IST" duration-ms="8461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verfyValidityLoginTest()[pri:0, instance:com.hrtest.LoginPageTest@6fe1b4fb]" started-at="2025-11-11T01:05:35 IST" name="verfyValidityLoginTest" finished-at="2025-11-11T01:05:41 IST" duration-ms="6138" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verfyValidityLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrtest.LoginPageTest@126945f9]" started-at="2025-11-08T16:36:32 IST" name="tearDown" finished-at="2025-11-08T16:36:32 IST" duration-ms="299" status="PASS">
+        <test-method is-config="true" signature="setupPages()[pri:0, instance:com.hrtest.LoginPageTest@6fe1b4fb]" started-at="2025-11-11T01:05:35 IST" name="setupPages" finished-at="2025-11-11T01:05:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPages -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrtest.LoginPageTest@6fe1b4fb]" started-at="2025-11-11T01:05:41 IST" name="tearDown" finished-at="2025-11-11T01:05:41 IST" duration-ms="182" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

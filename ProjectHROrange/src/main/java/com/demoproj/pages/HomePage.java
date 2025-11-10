@@ -12,7 +12,7 @@ public class HomePage {
 	private By adminTab = By.xpath("//*[@id=\"app\"]/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a/span");
 	private By userdButtn = By.className("oxd-userdropdown-name");
 	private By logoutLink = By.linkText("Logout");
-	private By logo = By.xpath("//div[@class='oxd-brand-banner']//img");
+	private By logo = By.xpath("//*[@id=\"app\"]/div[1]/div[1]/aside/nav/div[1]/a/div[2]/img");
 
 //	public HomePage(WebDriver driver) {
 //		this.actionDriver = new ActionDriver(driver);
