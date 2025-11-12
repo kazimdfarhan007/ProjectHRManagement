@@ -724,3 +724,60 @@ Session ID: 491f992c5a3daa831b56a083e8469a95
 2025-11-11 01:05:24 [TestNG-test-Test-2] FATAL BaseClass - Fatal: Browser could not be launched
 2025-11-11 01:05:35 [TestNG-test-Test-2] ERROR BaseClass - Error: Browser launch issue
 2025-11-11 01:05:35 [TestNG-test-Test-2] FATAL BaseClass - Fatal: Browser could not be launched
+2025-11-12 00:55:27 [TestNG-test-Test-1] ERROR BaseClass - Error: Browser launch issue
+2025-11-12 00:55:27 [TestNG-test-Test-1] FATAL BaseClass - Fatal: Browser could not be launched
+2025-11-12 00:55:27 [TestNG-test-Test-2] ERROR BaseClass - Error: Browser launch issue
+2025-11-12 00:55:27 [TestNG-test-Test-2] FATAL BaseClass - Fatal: Browser could not be launched
+2025-11-12 00:55:28 [TestNG-test-Test-3] ERROR BaseClass - Error: Browser launch issue
+2025-11-12 00:55:28 [TestNG-test-Test-3] FATAL BaseClass - Fatal: Browser could not be launched
+2025-11-12 00:55:43 [TestNG-test-Test-2] ERROR BaseClass - Error: Browser launch issue
+2025-11-12 00:55:43 [TestNG-test-Test-2] FATAL BaseClass - Fatal: Browser could not be launched
+2025-11-12 11:02:03 [TestNG-test-Test-3] ERROR BaseClass - Error: Browser launch issue
+2025-11-12 11:02:03 [TestNG-test-Test-3] FATAL BaseClass - Fatal: Browser could not be launched
+2025-11-12 11:02:04 [TestNG-test-Test-1] ERROR BaseClass - Error: Browser launch issue
+2025-11-12 11:02:04 [TestNG-test-Test-1] FATAL BaseClass - Fatal: Browser could not be launched
+2025-11-12 11:02:05 [TestNG-test-Test-2] ERROR BaseClass - Error: Browser launch issue
+2025-11-12 11:02:05 [TestNG-test-Test-2] FATAL BaseClass - Fatal: Browser could not be launched
+2025-11-12 11:02:17 [TestNG-test-Test-2] ERROR BaseClass - Error: Browser launch issue
+2025-11-12 11:02:17 [TestNG-test-Test-2] FATAL BaseClass - Fatal: Browser could not be launched
+2025-11-12 11:49:10 [TestNG-test-Test-1] ERROR BaseClass - Error: Browser launch issue
+2025-11-12 11:49:10 [TestNG-test-Test-1] FATAL BaseClass - Fatal: Browser could not be launched
+2025-11-12 11:49:10 [TestNG-test-Test-3] ERROR BaseClass - Error: Browser launch issue
+2025-11-12 11:49:10 [TestNG-test-Test-3] FATAL BaseClass - Fatal: Browser could not be launched
+2025-11-12 11:49:10 [TestNG-test-Test-2] ERROR BaseClass - Error: Browser launch issue
+2025-11-12 11:49:10 [TestNG-test-Test-2] FATAL BaseClass - Fatal: Browser could not be launched
+2025-11-12 11:49:25 [TestNG-test-Test-2] ERROR BaseClass - Error: Browser launch issue
+2025-11-12 11:49:25 [TestNG-test-Test-2] FATAL BaseClass - Fatal: Browser could not be launched
+2025-11-12 11:59:54 [TestNG-test-Test-3] ERROR BaseClass - Error: Browser launch issue
+2025-11-12 11:59:54 [TestNG-test-Test-3] FATAL BaseClass - Fatal: Browser could not be launched
+2025-11-12 11:59:55 [TestNG-test-Test-2] ERROR BaseClass - Error: Browser launch issue
+2025-11-12 11:59:55 [TestNG-test-Test-2] FATAL BaseClass - Fatal: Browser could not be launched
+2025-11-12 11:59:55 [TestNG-test-Test-1] ERROR BaseClass - Error: Browser launch issue
+2025-11-12 11:59:55 [TestNG-test-Test-1] FATAL BaseClass - Fatal: Browser could not be launched
+2025-11-12 12:00:09 [TestNG-test-Test-2] ERROR BaseClass - Error: Browser launch issue
+2025-11-12 12:00:09 [TestNG-test-Test-2] FATAL BaseClass - Fatal: Browser could not be launched
+2025-11-12 12:09:42 [TestNG-test-Test-1] ERROR BaseClass - Error: Browser launch issue
+2025-11-12 12:09:42 [TestNG-test-Test-1] FATAL BaseClass - Fatal: Browser could not be launched
+2025-11-12 12:09:43 [TestNG-test-Test-3] ERROR BaseClass - Error: Browser launch issue
+2025-11-12 12:09:43 [TestNG-test-Test-3] FATAL BaseClass - Fatal: Browser could not be launched
+2025-11-12 12:09:43 [TestNG-test-Test-2] ERROR BaseClass - Error: Browser launch issue
+2025-11-12 12:09:43 [TestNG-test-Test-2] FATAL BaseClass - Fatal: Browser could not be launched
+2025-11-12 12:09:59 [TestNG-test-Test-2] ERROR BaseClass - Error: Browser launch issue
+2025-11-12 12:09:59 [TestNG-test-Test-2] FATAL BaseClass - Fatal: Browser could not be launched
+2025-11-12 12:17:43 [TestNG-test-Test-2] ERROR BaseClass - Error: Browser launch issue
+2025-11-12 12:17:43 [TestNG-test-Test-2] FATAL BaseClass - Fatal: Browser could not be launched
+2025-11-12 12:17:44 [TestNG-test-Test-1] ERROR BaseClass - Error: Browser launch issue
+2025-11-12 12:17:44 [TestNG-test-Test-1] FATAL BaseClass - Fatal: Browser could not be launched
+2025-11-12 12:17:44 [TestNG-test-Test-3] ERROR BaseClass - Error: Browser launch issue
+2025-11-12 12:17:44 [TestNG-test-Test-3] FATAL BaseClass - Fatal: Browser could not be launched
+2025-11-12 12:17:56 [TestNG-test-Test-2] ERROR BaseClass - Error: Browser launch issue
+2025-11-12 12:17:56 [TestNG-test-Test-2] FATAL BaseClass - Fatal: Browser could not be launched
+2025-11-12 12:21:42 [TestNG-test-Test-1] ERROR BaseClass - Error: Browser launch issue
+2025-11-12 12:21:42 [TestNG-test-Test-1] FATAL BaseClass - Fatal: Browser could not be launched
+2025-11-12 12:21:43 [TestNG-test-Test-2] ERROR BaseClass - Error: Browser launch issue
+2025-11-12 12:21:43 [TestNG-test-Test-2] FATAL BaseClass - Fatal: Browser could not be launched
+2025-11-12 12:21:43 [TestNG-test-Test-3] ERROR BaseClass - Error: Browser launch issue
+2025-11-12 12:21:43 [TestNG-test-Test-3] FATAL BaseClass - Fatal: Browser could not be launched
+2025-11-12 12:21:56 [TestNG-test-Test-2] ERROR BaseClass - Error: Browser launch issue
+2025-11-12 12:21:56 [TestNG-test-Test-2] FATAL BaseClass - Fatal: Browser could not be launched
+2025-11-12 15:56:38 [TestNG-test-Test-2] ERROR ActionDriver - Text does not match. Expected: Invalid credentials!, Actual: Invalid credentials

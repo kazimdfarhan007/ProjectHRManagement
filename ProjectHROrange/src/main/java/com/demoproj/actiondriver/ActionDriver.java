@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.demoproj.base.BaseClass;
+import com.demoproj.utilities.ExtentManager;
 
 public class ActionDriver{
 	private WebDriver driver;
@@ -28,10 +29,12 @@ public class ActionDriver{
 		try {
 			waitforElementtobeClikable(by);
 			driver.findElement(by).click();
+			ExtentManager.logStep("clicked an element: "+elementDesc);
 			logger.info("Clicked on element: " +elementDesc);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			logger.error("Unable to click on element: " + e.getMessage());
+			ExtentManager.logFailure(BaseClass.getDriver(), "Unable to click element:", elementDesc+"_unable to click");
 		}
 	}
 
@@ -63,9 +66,12 @@ public class ActionDriver{
 		try {
 			waitforElementtobeVisible(by);
 			logger.info("Element is displayed " + getElementDescribtion(by));
+			ExtentManager.logStep("Element is displayed: "+getElementDescribtion(by));
+			ExtentManager.logStepWithScreenshot(BaseClass.getDriver(), "Element is displayed: ", "Element is displayed: "+getElementDescribtion(by));
 			return driver.findElement(by).isDisplayed();
 		} catch (Exception e) {
 			logger.error("Element is not displayed: " + e.getMessage());
+			ExtentManager.logFailure(BaseClass.getDriver(),"Element is not displayed: ","Elemenet is not displayed: "+getElementDescribtion(by));
 			return false;
 		}
 	}
@@ -75,9 +81,10 @@ public class ActionDriver{
 			String actualText = getText(by);
 			if (actualText.equals(expectedText)) {
 				logger.info("Text matches: " + actualText);
+				ExtentManager.logStepWithScreenshot(BaseClass.getDriver(), "Compare Text", "Text Verified Successfully! "+actualText+ " equals "+expectedText);
 			} else {
 			logger.error("Text does not match. Expected: " + expectedText + ", Actual: " + actualText);
-			}
+			ExtentManager.logFailure(BaseClass.getDriver(), "Text Comparison Failed!", "Text Comparison Failed! "+actualText+ " not equals "+expectedText);}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			logger.error("Unable to compare text" + e.getMessage());

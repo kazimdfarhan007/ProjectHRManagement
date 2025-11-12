@@ -16,11 +16,13 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import com.demoproj.actiondriver.ActionDriver;
+import com.demoproj.utilities.ExtentManager;
 import com.demoproj.utilities.LoggerManager;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -55,10 +57,7 @@ public class BaseClass {
 		configureBrowser();
 		staticWait(3);
 		logger.info("Browser launched successfully");
-		logger.trace("Trace: Browser launched");
-		logger.error("Error: Browser launch issue");
-		logger.fatal("Fatal: Browser could not be launched");
-		logger.warn("Warn: Browser launch warning");
+		
 		// intialize action driver once
 //		if (actionDriver == null) {
 //			actionDriver = new ActionDriver(driver);
@@ -78,18 +77,21 @@ public class BaseClass {
 //			options.addArguments("--remote-allow-origins=*");
 //			driver = new ChromeDriver(options);
 			driver.set(new ChromeDriver());// new changes as per thread local
+			ExtentManager.registerDriver(getDriver());
 			logger.info("Chrome Browser launched");
 
 		} else if (prop.getProperty("browser").equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			// driver = new FirefoxDriver();
 			driver.set(new FirefoxDriver()); // new changes as per thread local
+			ExtentManager.registerDriver(getDriver());
 			logger.info("Firefox Browser launched");
 
 		} else if (prop.getProperty("browser").equalsIgnoreCase("edge")) {
 			WebDriverManager.edgedriver().setup();
 			// driver = new EdgeDriver();
 			driver.set(new EdgeDriver());
+			ExtentManager.registerDriver(getDriver());
 		}
 	}
 
@@ -124,13 +126,19 @@ public class BaseClass {
 		System.out.println("Driver and ActionDriver set to null");
 		logger.info("Browser closed and resources cleaned up");
 	}
+	@AfterSuite
+	public void tearDownlast() {
+	    ExtentManager.endTest();
+	    System.out.println("Extent Report flushed — file created successfully.");
+	}
+
 
 	public static Properties getProp() {
 		return prop;
 	}
 
 	// getter for driver
-	public WebDriver getDriver() {
+	public static WebDriver getDriver() {
 		if (driver.get() == null) {
 			System.out.println("Driver is null");
 			throw new IllegalStateException(

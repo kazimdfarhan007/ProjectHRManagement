@@ -3,15 +3,16 @@
 <suite thread-count="4" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="4" parallel="classes" name="Test(failed)">
     <classes>
-      <class name="com.hrtest.HomePageTest">
+      <class name="com.hrtest.LoginPageTest">
         <methods>
-          <include name="verifyAdminTabVisibilityTest"/>
-          <include name="setupPages"/>
+          <include name="verfyValidityLoginTest"/>
+          <include name="tearDownlast"/>
           <include name="loadconfig"/>
           <include name="tearDown"/>
+          <include name="setupPages"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.hrtest.HomePageTest -->
+      </class> <!-- com.hrtest.LoginPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
